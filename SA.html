@@ -1,123 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sales Administration</title>
     <style>
-        /* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-/* Header styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-}
+      /* Header styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+        color: #fff;
+      }
 
-.logo {
-    font-size: 1.5rem;
-}
+      .logo {
+        font-size: 1.5rem;
+      }
 
-.profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
+      .profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
 
-.search input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+      .search input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
 
-/* Navigation sidebar styles */
-nav {
-    width: 250px;
-    background-color: #f5f5f5;
-}
+      /* Navigation sidebar styles */
+      nav {
+        width: 250px;
+        background-color: #f5f5f5;
+      }
 
-ul {
-    list-style: none;
-    padding: 1rem;
-}
+      ul {
+        list-style: none;
+        padding: 1rem;
+      }
 
-li {
-    margin-bottom: 0.5rem;
-}
+      li {
+        margin-bottom: 0.5rem;
+      }
 
-/* Cards section styles */
-.cards {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-}
+      /* Cards section styles */
+      .cards {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+      }
 
-.card {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 4px;
-}
+      .card {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 4px;
+        text-align: center;
+        width: 300px;
+      }
 
-/* Recent articles styles */
-.recent-articles {
-    padding: 1rem;
-}
+      /* Recent articles styles */
+      .recent-articles {
+        padding: 1rem;
+      }
 
-/* Add more styles as needed */
+      .customers {
+        padding: 1rem;
+      }
+      
+      .customer-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .customer-card {
+        background-color: #26828a55;
+        padding: 1rem;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .customer-img {
+        border-radius: 50%;
+      }
+      
+      .name {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+      }
+
+      /* Center text */
+      .center {
+        text-align: center;
+        font-size: 2rem;
+      }
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .cards {
+          flex-direction: column;
+        }
+
+        .card {
+          margin-bottom: 1rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        nav {
+          width: 100%;
+        }
+
+        .cards {
+          flex-direction: column;
+        }
+      }
 
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">Sales Admin</div>
-        <div class="profile">
-            <img src="profile.jpg" alt="Admin Profile">
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Search...">
-        </div>
+      <div class="logo">اداره المبيعات</div>
+      <div class="search">
+        <input type="text" placeholder="بحث ...." />
+      </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Customers</a></li>
-            <!-- Add more menu items as needed -->
-        </ul>
-    </nav>
     <main>
+      <section class="customers">
+        <h2>من عملائنا</h2>
+        <div class="customer-list">
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 1" width="100" height="100">
+            <h3 class="name">احمد السيد</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: المحله الكبري</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 2" width="100" height="100">
+            <h3 class="name">محمد علي</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: القاهره</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 3" width="100" height="100">
+            <h3 class="name">احمد محمد</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الاسكندريه</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 4" width="100" height="100">
+            <h3 class="name">محمد محمود</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الغربيه</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 5" width="100" height="100">
+            <h3 class="name">احمد عبد الرحمن</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الاسكندريه</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 6" width="100" height="100">
+            <h3 class="name">محمد احمد</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الغربيه</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">مصطفي شعبان</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الفيوم</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">الشيخ مهني</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: مطروح</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">ام محمود كراويه</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الدرب الاحمر</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">حسن الصايغ</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: مراسي</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">مصطفي شعبان</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الفيوم</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">الحج احمد</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: اسوان</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">حسين حمدان</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الجيزه</p>
+          </div>
+          <div class="customer-card">
+            <img class="customer-img" src="./Media/EmptyUser.png" alt="Customer 7" width="100" height="100">
+            <h3 class="name">علاء شعبان</h3>
+            <p>التليفون: 0102030445</p>
+            <p>العنوان: الفيوم</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="center">احصائيات المخزن</h2>
         <div class="cards">
-            <div class="card">
-                <h3>Daily Views</h3>
-                <p>1,200</p>
-            </div>
-            <div class="card">
-                <h3>Likes</h3>
-                <p>750</p>
-            </div>
-            <div class="card">
-                <h3>Comments</h3>
-                <p>420</p>
-            </div>
+          <div class="card">
+            <h2>المبيعات</h2>
+            <p>المبيعات اليوم: 1000 جنيه</p>
+            <p>المبيعات الشهر: 30000 جنيه</p>
+            <p>المبيعات السنه: 500000 جنيه</p>
+          </div>
+          <div class="card">
+            <h2>المشتريات</h2>
+            <p>المشتريات اليوم: 500 جنيه</p>
+            <p>المشتريات الشهر: 15000 جنيه</p>
+            <p>المشتريات السنه: 250000 جنيه</p>
+          </div>
+          <div class="card">
+            <h2>المخزون</h2>
+            <p>المنتجات المتاحه: 1000 منتج</p>
+            <p>المنتجات المنتهيه: 50 منتج</p>
+            <p>المنتجات القادمه: 200 منتج</p>
+          </div>
         </div>
+      </section>
+      <section>
+        <h2 class="center">اراء العملاء</h2>
         <div class="recent-articles">
-            <h2>Recent Articles</h2>
-            <ul>
-                <li><a href="#">Article 1</a></li>
-                <li><a href="#">Article 2</a></li>
-                <li><a href="#">Article 3</a></li>
-                <!-- Add more articles here -->
-            </ul>
-        </div>
+          <div class="article">
+            <h3>احمد السيد</h3>
+            <p>التعليق: سعر ايه وخامات ايه وتعامل ايه وايييييييه ما شاء الله</p>
+          </div>
+          <div class="article">
+            <h3>محمد علي</h3>
+            <p>التعليق: فوق مستوي التقييمات</p>
+          </div>
+          <div class="article">
+            <h3>احمد محمد</h3>
+            <p>التعليق: انا احب المنتجات الخاصه بكم</p>
+          </div>
+          <div class="article">
+            <h3>محمد محمود</h3>
+            <p>التعليق: مباخدش غير من الشباب دول</p>
+          </div>
+      </section>
     </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
