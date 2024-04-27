@@ -10,10 +10,18 @@
 <link rel="stylesheet" media="screen" href="[Cairo Google Fonts URL](https://fonts.google.com/specimen/Cairo)" type="text/css">
 <link rel="icon" href="./Media/Wallpaper.jpg" type="image/x-icon">
 <style>
-body {font-family: "Cairo", Cairo}
-.mySlides {display: none}
-
-.customers {
+  body {
+    font-family: "Cairo", Cairo;
+    background-color: lightgray;
+  }
+.mySlides {
+  display: none
+}
+  .w3-top {
+    background: linear-gradient(90deg, rgba(3,142,186,1) 0%, rgba(14,149,102,1) 100%);
+    color: white;
+  }
+  .customers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -21,83 +29,84 @@ body {font-family: "Cairo", Cairo}
     padding: 10px;
     background-color:white;
     color: black;
-}
+  }
 
-.customer-card {
-    max-width: 200px;
-    text-align: center;
-}
+  .customer-card {
+      max-width: 200px;
+      text-align: center;
+  }
 
-.customer-logo {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-}
+  .customer-logo {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+  }
 
-.customer-name {
-    font-weight: bold;
-}
+  .customer-name {
+      font-weight: bold;
+  }
 
-.card {
-    justify-content: center;
+  .card {
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+      text-align: center;
+      margin-bottom: 0px;
+  }
+  .card2 {
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      background: rgb(3,142,186);
+      background: linear-gradient(180deg, rgba(3,142,186,1) 0%, rgba(14,149,102,1) 100%);
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+      text-align: center;
+      margin-bottom: 0px;
+  }
+  .WallPaper{
     width: 100%;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
-    text-align: center;
-    margin-bottom: 0px;
-}
-.card2 {
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
+    height: 50%;
+    margin-top: -80px;
+  }
+  h2 {
+      color: #333;
+  }
+
+  p {
+      font-size: 19px;
+      line-height: 1.5;
+  }
+  footer {
     background: rgb(3,142,186);
     background: linear-gradient(180deg, rgba(3,142,186,1) 0%, rgba(14,149,102,1) 100%);
     color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
     text-align: center;
-    margin-bottom: 0px;
-}
-.WallPaper{
-  width: 100%;
-  height: 50%;
-  margin-top: -80px;
-}
-h2 {
-    color: #333;
-}
-
-p {
-    font-size: 19px;
-    line-height: 1.5;
-}
-footer {
-        background: rgb(3,142,186);
-        background: linear-gradient(180deg, rgba(3,142,186,1) 0%, rgba(14,149,102,1) 100%);
-        color: white;
-        text-align: center;
-        padding: 90px;
-        margin-bottom: -150px;
-    }
+    padding: 90px;
+    margin-bottom: -150px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 130px;
+  }
 </style>
 </head>
-<body style="background-color: lightgray;">
+<body>
 
 <!-- Navbar -->
-<div align="right" style="background-color: black;">
-<div align="right" class="w3-top" style="background: rgb(3,142,186);
-background: linear-gradient(90deg, rgba(3,142,186,1) 0%, rgba(14,149,102,1) 100%); color: white;">
-  <div  align="right">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">الرئيسية</a>
-    <a href="#Ourservice" class="w3-bar-item w3-button w3-padding-large w3-hide-small">خدماتنا</a>
-    <a href="WE.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">من نحن</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">تواصل معنا</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+<div>
+  <div class="w3-top">
+    <div>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">الرئيسية</a>
+      <a href="#Ourservice" class="w3-bar-item w3-button w3-padding-large w3-hide-small">خدماتنا</a>
+      <a href="WE.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">من نحن</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">تواصل معنا</a>
+    </div>
   </div>
-</div>
 </div>
 
 
@@ -179,14 +188,12 @@ background: linear-gradient(90deg, rgba(3,142,186,1) 0%, rgba(14,149,102,1) 100%
 
     <div class="card">
       <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-        <h2 id="contact" class="w3-center" align="center" style="font-family: cairo; font-weight: bold; color: black;">خدمة العملاء</h2>
+        <h2 id="contact" class="w3-center" style="font-family: cairo; font-weight: bold; color: black;">خدمة العملاء</h2>
         <p class="w3-opacity w3-center"><i>أكتب مشكلتك وسوف نساعدك في حلها</i></p>
         <div class="w3-row w3-padding-32">
           <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width:30px"></i> Tanta, EG<br>
-            <i class="fa fa-phone" style="width:30px"></i> Phone: 040/2456047 - 01273221685<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> Email: info@hics-unv.com<br>
-          </div>
+            <i class="fa fa-map-marker" style="width:30px"></i> طنطا - مصر<br>
+            <i class="fa fa-phone" style="width:30px"></i>التليفون: +2010101038<br>          </div>
           <div class="w3-col m6">
             <form target="_blank">
               <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -205,13 +212,15 @@ background: linear-gradient(90deg, rgba(3,142,186,1) 0%, rgba(14,149,102,1) 100%
       </div>
     </div>
     
-    <footer style=" height: 200px;">
+    <footer>
       <div >
-        <a style="margin-left: 20px; margin-right: 20px;" href="#">الرئيسية</a>
-        <a style="margin-left: 20px; margin-right: 20px;" href="WE.html">من نحن</a>
-        <a style="margin-left: 20px; margin-right: 20px;" href="#Ourservice">خدماتنا</a>
-        <a style="margin-left: 20px; margin-right: 20px;" href="#contact">تواصل معنا</a>
-        <h6 style="margin-top: 60px;">جميع الحقوق محفوظة <a href="WE.html">لتيم المشروع</a></h6>
+        <div>
+          <a style="margin-left: 20px; margin-right: 20px;" href="#">الرئيسية</a>
+          <a style="margin-left: 20px; margin-right: 20px;" href="WE.html">من نحن</a>
+          <a style="margin-left: 20px; margin-right: 20px;" href="#Ourservice">خدماتنا</a>
+          <a style="margin-left: 20px; margin-right: 20px;" href="#contact">تواصل معنا</a>
+        </div>
+        <h6>جميع الحقوق محفوظة <a href="WE.html">لتيم المشروع</a></h6>
       </div>
 
   </footer>
