@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html dir="rtl" lang="ar">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,106 +25,70 @@
         font-family: "Cairo", Cairo;
         background-color: #87cefa;
       }
+
+      .w3-top {
+        color: white;
+        background: linear-gradient(
+          90deg,
+          rgba(3, 142, 186, 1) 0%,
+          rgba(14, 149, 102, 1) 100%
+        );
+      }
       /* styles for the cards */
       .cards {
-        font-family: "Cairo", Cairo;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
       }
 
       .card {
-        font-family: "Cairo", Cairo;
-        display: inline-block;
         width: 100%;
         max-width: 400px;
-        height: 100px;
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        background-color: #f8f8ff;
-        flex: 1 0 calc(50% - 20px);
-      }
-
-      /* css for the first card */
-      .card-1 {
-        font-family: "Cairo", Cairo;
         background-color: #eeede6;
         height: 260px;
       }
 
-      /* css for the second card */
-      .card-2 {
-        background-color: #eeede6;
-        height: 260px;
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 3rem;
+        color: white;
       }
 
-      /* css for the third card */
-      .card-3 {
-        background-color: #eeede6;
-        height: 260px;
+      .customer-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        margin-bottom: 10px;
       }
 
-      /* css for the fourth card */
-      .card-4 {
-        background-color: #eeede6;
-        height: 260px;
+      /* responsive design*/
+      @media (max-width: 768px) {
+        .card {
+          flex: 1 0 calc(100% - 20px);
+        }
       }
 
-      /* css for the fifth card */
-      .card-5 {
-        background-color: #eeede6;
-        height: 260px;
+      .name {
+        text-align: center;
       }
 
-      /* css for the sixth card */
-      .card-6 {
-        background-color: #eeede6;
-        height: 260px;
-      }
-
-      /* css for the seventh card */
-      .card-7 {
-        background-color: #eeede6;
-        height: 260px;
-      }
-
-      /* css for the eighth card */
-      .card-8 {
-        background-color: #eeede6;
-        height: 260px;
-      }
-
-      /* css for the ninth card */
-      .card-9 {
-        background-color: #eeede6;
-        height: 260px;
-      }
-
-      /* css for the tenth card */
-      .card-10 {
-        background-color: #eeede6;
-        height: 260px;
+      /* Navbar */
+      a {
+        font-size: 1.5rem;
       }
     </style>
   </head>
 
   <body>
-    <div style="background-color: black; justify-content: center">
-      <div
-        class="w3-top"
-        style="
-          background: rgb(3, 142, 186);
-          background: linear-gradient(
-            180deg,
-            rgba(3, 142, 186, 1) 0%,
-            rgba(14, 149, 102, 1) 100%
-          );
-          color: white;
-        "
-      >
-        <div align="right">
+    <!-- Navbar -->
+    <div>
+      <div class="w3-top">
+        <div>
           <a
             class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
             href="javascript:void(0)"
@@ -132,118 +96,109 @@
             title="Toggle Navigation Menu"
             ><i class="fa fa-bars"></i
           ></a>
-          <a href="#" class="w3-bar-item w3-button w3-padding-large"
+          <a href="./index.html" class="w3-bar-item w3-button w3-padding-large"
             >الرئيسية</a
           >
           <a
-            href="#band"
+            href="./index.html#Ourservice"
             class="w3-bar-item w3-button w3-padding-large w3-hide-small"
             >خدماتنا</a
           >
           <a
-            href="#tour"
+            href="./WE.html"
             class="w3-bar-item w3-button w3-padding-large w3-hide-small"
             >من نحن</a
           >
           <a
-            href="#contact"
+            href="./index.html#contact"
             class="w3-bar-item w3-button w3-padding-large w3-hide-small"
             >تواصل معنا</a
           >
-          <a
-            href="javascript:void(0)"
-            class="w3-padding-large w3-hover-red w3-hide-small w3-right"
-            ><i class="fa fa-search"></i
-          ></a>
         </div>
       </div>
     </div>
 
-    <h1 align="center" style="font-family: Cairo; color: white">
-      فـــــريــق الــــعــمـل
-    </h1>
+    <h1>فـــــريــق الــــعــمـل</h1>
     <div class="cards">
-      <div class="card card-1">
+      <div class="card">
         <img
           src="Media/AhmedYasser.jpeg"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Ahmed Yasser Farouk's photo"
         />
-        <h2 align="center" style="font-family: Cairo">أحمد ياسر فاروق</h2>
+        <h2 class="name">أحمد ياسر فاروق</h2>
       </div>
-      <div class="card card-2">
+      <div class="card">
         <img
           src="Media/EmptyUser.png"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Ahmed Abdelhameed's photo"
         />
-        <h2 align="center" style="font-family: Cairo">أحمد عبدالحميد نعمان</h2>
+        <h2 class="name">أحمد عبدالحميد نعمان</h2>
       </div>
-      <div class="card card-3">
+      <div class="card">
         <img
           src="Media/Ahmedmadkour.jpeg"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Ahmed Saadeldin's photo"
         />
-        <h2 align="center" style="font-family: Cairo">أحمد سعدالدين مدكور</h2>
+        <h2 class="name">أحمد سعدالدين مدكور</h2>
       </div>
-      <div class="card card-4">
+      <div class="card">
         <img
           src="Media/EmptyUser.png"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Mahmoud Adel's photo"
         />
-        <h2 align="center" style="font-family: Cairo">محمود عادل محمد شبل</h2>
+        <h2 class="name">محمود عادل محمد شبل</h2>
       </div>
-      <div class="card card-5">
+      <div class="card">
         <img
           src="Media/Kareem.JPG"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Kareem Hamdan's photo"
         />
-        <h2 align="center" style="font-family: Cairo">
-          كريم حمدان حسين عبدالقادر
-        </h2>
+        <h2 class="name">كريم حمدان حسين عبدالقادر</h2>
       </div>
-      <div class="card card-6">
+      <div class="card">
         <img
           src="Media/EmptyUser.png"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Sabreen Fathallah's photo"
         />
-        <h2 align="center" style="font-family: Cairo">صابرين محمد فتح الله</h2>
+        <h2 class="name">صابرين محمد فتح الله</h2>
       </div>
-      <div class="card card-7">
+      <div class="card">
         <img
           src="Media/EmptyUser.png"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Haballah's photo"
         />
-        <h2 align="center" style="font-family: Cairo">هبة الله هاني مصطفى</h2>
+        <h2 class="name">هبة الله هاني مصطفى</h2>
       </div>
-      <div class="card card-8">
+      <div class="card">
         <img
           src="Media/EmptyUser.png"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Maher's photo"
         />
-        <h2 align="center" style="font-family: Cairo">مدحت ماهر محمد مأمون</h2>
+        <h2 class="name">مدحت ماهر محمد مأمون</h2>
       </div>
-      <div class="card card-9">
+      <div class="card">
         <img
           src="Media/No'ar.jpeg"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Mohamed No'ar's photo"
         />
-        <h2 align="center" style="font-family: Cairo">محمد مصطفى كامل نوار</h2>
+        <h2 class="name">محمد مصطفى كامل نوار</h2>
       </div>
-      <div class="card card-10">
+      <div class="card">
         <img
           src="Media/EmptyUser.png"
-          style="width: 150px; height: 150px; border-radius: 10px"
+          class="customer-img"
           alt="Yasmin's photo"
         />
-        <h2 align="center" style="font-family: Cairo">ياسمين أحمد حلمي</h2>
+        <h2 class="name">ياسمين أحمد حلمي</h2>
       </div>
     </div>
   </body>
